@@ -1,0 +1,44 @@
+* {
+    text-align: center;
+}
+
+body {
+    border:black 2px solid;
+    min-height: 100vh;
+    /* to remove white space */
+    margin: 0 auto;
+    padding: 0;
+    /* overflow: hidden; */
+    background: #169bff;
+}
+
+header {
+    border: red 2px solid;
+}
+
+.container {
+    /* border: red 2px solid; */
+}
+
+section {
+    margin: 40px;
+    border: green 2px solid;
+}
+
+h1, h2 {
+    /* color: green; */
+    /* text-align: center; */
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+}
