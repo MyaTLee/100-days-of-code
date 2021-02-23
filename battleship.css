@@ -13,7 +13,8 @@ body {
 }
 
 header {
-    border: red 2px solid;
+    /* border: red 2px solid; */
+    margin-top: 40px;
 }
 
 .container {
@@ -21,13 +22,26 @@ header {
 }
 
 section {
-    margin: 40px;
-    border: green 2px solid;
+    margin: 60px;
+    /* border: green 2px solid; */
 }
 
-h1, h2 {
+h2 {
     /* color: green; */
     /* text-align: center; */
+    font-size: 14px;
+}
+
+.game2 {
+    border: black 2px dotted;
+    float: left;
+    width: 45%;
+}
+
+.game3 {
+    float: right;
+    border: black 2px dotted;
+    width: 45%;
 }
 
 ul {
@@ -39,6 +53,7 @@ li {
 }
 
 table {
-    display: flex;
-    justify-content: center;
+    margin-top: 200px;
+    /* display: flex;
+    justify-content: center; */
 }
