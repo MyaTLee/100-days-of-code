@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css.portfolio/style.css">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo container-fluid">
+            <div class="row">
+                <img src="images.portfolio/dark logo.png" alt="Logo">
+            </div>
+        </h1>
+        <nav class="navbar-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <ul>
+                        <li class="nav-item"><a href="#home">Home</a></li>
+                        <li class="nav-item"><a href="#about">About</a></li>
+                        <li class="nav-item"><a href="#gallery">My Works</a></li>
+                        <li class="nav-item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container-fluid" id= "text">
+                <div class="row" id="intro">
+                    <h2>Hi, my name is Mya Lee.</h2>
+                </div>
+                <div class="row" id="intro">
+                    <h3>Mississippi Coding Academy student 2020-2021</h3>
+                </div>
+            </div>
+            <div class="container-fluid" id="image">
+                <img src="images.portfolio/Mya Lee Headshot.JPG" alt="Headshot" class="img-fluid">
+                
+            </div>
+            <div class="container-fluid" id="contact-button">
+                <div class="row">
+                    <form action="#contact">
+                        <button><strong>Contact me!</strong></button>
+                        <input type="hidden" name="contact">
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+        <!-- /home -->
+
+        <section id="about">
+            <div class="container-fluid" id="title">
+                <div class="row">
+                    <h2>About Me</h2>
+                </div>
+            </div>
+            
+            <div class="container-fluid" id="info">
+                <div class="row" id="p">
+                    <p>Student at the Misssissippi Coding Academy to become a front end web developer</p>
+                </div>
+                <div class="row" id="p">
+                    <p>Studied and worked within education, workforce development, and historical/arts-related fields</p>
+                </div>
+                <div class="row" id="p">
+                    <p>Fan of wrestling, reading, Asian television and film, anime, fiction and manga, and games</p>
+                </div>
+                <div class="row" id="p">
+                    <p>Interested in gaining more experience with core Front-end to work on challenging and creative projects as well as learning more coding languages</p>
+                </div>
+                <div class="row" id="p">
+                    <p>Ultimate goal of merging education and coding to create an interactive video game to help students learn and understand history</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <a href="" download></a>
+            </div>
+        </section>
+        <!-- /about -->
+
+        <section id="gallery">
+            <div class="container-fluid">
+                <div class="row">
+                    <h2>My Works</h2>
+                </div>
+                <div class="row">
+                    <div class="works works1"></div>
+                    <div class="works works2"></div>
+                    <div class="works works3"></div>
+                </div>
+            </div>
+        </section>
+        <!-- /gallery -->
+
+        <section id="contact">
+            <div class="container-fluid">
+                <div class="row">
+                    <h2>Contact me</h2>
+                    
+                </div>
+                <div class="row">
+                    <p>If you have any questions, please do not hesitate to contact using the form below.</p>
+                </div>
+                
+                <div class="row">
+                    <form action="mailto:mya@mscodingacademies.org" method="POST" enctype="multipart/form-data" name="EmailForm">
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Name">
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Email">
+                        <label for="subject"></label>
+                        <input type="text" id="subject" placeholder="Subject">
+                        <label for="message"></label>
+                        <input type="text" id="message" placeholder="Message...">
+                        <input type="submit" id="submit" placeholder="Send">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- /contact -->
+    </main>
+    
+    <footer>
+        <nav class="navbar-bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/mya-lee-538649aa/">LinkedIn</a></li>
+                        <li><a href="https://github.com/MyaTLee">GitHub</a></li>
+                        <li><a href="https://codepen.io/J00589189">CodePen</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </footer>
+</body>
+<script src="js.portfolio/portfolio.js"></script> 
+</html>
