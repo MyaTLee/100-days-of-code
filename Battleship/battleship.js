@@ -21,3 +21,11 @@
 
 // at least two separate platforms/grids for each player: Player and Opponent and they both will track hits and misses
 //grid will be outlined with alphabets and numbers
+
+//! home screen
+window.onload=function {
+    const instructions = document.createElement("button");
+
+    const start = document.createElement("label");
+    start
+}
