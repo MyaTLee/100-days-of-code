@@ -14,3 +14,8 @@ Thoughts: I have a goal of finished Battleship game by the end of the week.
 Today's Progress: I didn't get much done, but worked on bootstrap with personal portfolio.
 
 Thoughts: Need to work on media query (CSS) for responsiveness.
+
+### Day 4: February 24, 2021
+Today's Progress: Continued to work on Battleship. Recreating an online Battleship game, and focused mainly on HTML and CSS.
+
+Thoughts: Need to research and work/update files with Bootstrap and flex.
