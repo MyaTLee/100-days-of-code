@@ -15,9 +15,14 @@
     <header class="container">
         <div class="row">
             <div class="col">
-                <h1>Battleship Game</h1>
-                <h2>#100DaysofCode</h2>
+                <h1><b>Battleship Game</b></h1>
+                <p id="textbox">Place the ships.</p>
             </div>
+            <!-- <div class="clear"></div> -->
+        </div>
+        
+        <div class="row" id="bottom-header">
+            <h2><i>#100DaysofCode</i></h2>
         </div>
     </header>
 
@@ -39,38 +44,20 @@
         </div>
     </section> -->
 
-    <section> 
+    <section id="player-board"> 
     
         <div class="game2 container" id="player1">
-            <ul class="row" id="row4">
+            <ul class="row flex-row" id="row4">
                 <li class="col">1</li>
                 <li class="col">2</li>
                 <li class="col">3</li>
             </ul>
-            <ul class="row" id="row5">
+            <ul class="row flex-row" id="row5">
                 <li class="col">4</li>
                 <li class="col">5</li>
                 <li class="col">6</li>
             </ul>
-            <ul class="row" id="row6">
-                <li class="col">7</li>
-                <li class="col">8</li>
-                <li class="col">9</li>
-            </ul>
-        </div>
-            
-        <div class="game3 container" id="player2">
-            <ul class="row" id="row7">
-                <li class="col">1</li>
-                <li class="col">2</li>
-                <li class="col">3</li>
-            </ul>
-            <ul class="row" id="row8">
-                <li class="col">4</li>
-                <li class="col">5</li>
-                <li class="col">6</li>
-            </ul>
-            <ul class="row" id="row9">
+            <ul class="row flex-row" id="row6">
                 <li class="col">7</li>
                 <li class="col">8</li>
                 <li class="col">9</li>
@@ -78,11 +65,29 @@
         </div>
     </section>
 
-    <!-- <section >
-        
-    </section> -->
+    <section id="opponent-board">
+            
+        <div class="game3 container" id="player2">
+            <ul class="row flex-row" id="row7">
+                <li class="col">1</li>
+                <li class="col">2</li>
+                <li class="col">3</li>
+            </ul>
+            <ul class="row flex-row" id="row8">
+                <li class="col">4</li>
+                <li class="col">5</li>
+                <li class="col">6</li>
+            </ul>
+            <ul class="row flex-row" id="row9">
+                <li class="col">7</li>
+                <li class="col">8</li>
+                <li class="col">9</li>
+            </ul>
+        </div>
+    </section>
 
-    <section class="player container">
+
+    <section class="score container">
         <div class="row">
             <div class="col flex-row">
                 <table class="table-responsive-sm table-bordered">
