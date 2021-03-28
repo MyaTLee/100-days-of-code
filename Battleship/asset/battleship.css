@@ -1,0 +1,235 @@
+:root {
+    --perRow: 3;
+}
+
+* {
+    text-align: center;
+}
+
+body {
+    /* border: white 2px solid; */
+    min-height: 100vh;
+    /* to remove white space */
+    margin: 0 auto;
+    padding: 0;
+    /* overflow: hidden; */
+    background: #169bff;
+}
+
+/* header {
+    /* border: red 2px solid; */
+    /* margin-top: 40px;
+} */
+
+
+h1 {
+    /* border: green 2px solid; */
+    float: left;
+    width: 30%;
+    font-size: 20px;
+}
+
+p {
+    border: black 2px dotted;
+    float: right;
+    width: 60%
+}
+
+#bottom-header {
+    margin-top: -15px;
+    width: 10%;
+    margin-left: 50px;
+}
+
+@media (min-width: 768px) {
+    #bottom-header {
+        margin-left: 90px;
+    }
+}
+
+@media (min-width: 992px) {
+    #bottom-header {
+        margin-left: 120px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #bottom-header {
+        margin-left: 150px;
+    }
+}
+
+h2 {
+    /* border: green 2px solid; */
+    /* color: green; */
+    text-align: left;
+    font-size: 14px;
+    width: 10%;
+}
+
+.container {
+    /* border: white 2px solid;  */
+    width: 100%;
+}
+
+main {
+    /* min-height: 61vh; */
+    position: relative;
+    width: 100%;
+}
+section {
+    margin-top: 50px;;
+
+    /* border: green 2px solid; */
+    padding: 50px 0;
+    
+}
+
+.tile {
+    width: calc(100%/var(--perRow));
+    height: calc(100%/var(--perRow));
+    border: 2px solid #fff;
+}
+
+/* .tile2 {
+    width: calc(100%/var(--perRow));
+    height: calc(100%/var(--perRow));
+    border: 2px solid #fff;
+} */
+
+.game2 {
+    margin-right: 20px;
+    border: black 2px dotted;
+    
+    /* float: left;
+    width: 45%; */
+} 
+
+#player1 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    /* width: 50%;  */
+    /* margin: 0 auto; */
+    /* centers the gameboard */
+    /* background: rgb(107, 149, 212); */
+}
+
+.game3 {
+    /* float: right; */
+    border: black 2px dotted;
+    /* width: 45%; */
+} 
+
+#player2 {
+    /* border: red 2px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 50%;
+    width: 50%; */
+    /* margin: 0 auto; */
+    /* centers the gameboard */
+    /* background: rgb(107, 149, 212); */
+}
+
+footer {
+    margin-top: 20px;
+    /* margin-bottom: -50px; */
+    /* border: red 2px solid; */
+    position: absolute;
+    width: 99.5%;
+    /* min-height: -20vh; */
+}
+.score {
+    /* border: 2px red solid; */
+    margin-top: 65px;
+    padding: 0;
+    /* padding-top: 50px; */
+}
+
+table {
+    /* margin-top: 200px; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#bottom-row {
+    width: 525px;
+    margin-left: 8px;
+}
+
+/* form {
+    /* border: 2px green solid; */
+    /* margin-left: -50px; */
+
+
+form label {
+    margin-left: -40px;
+}
+
+
+button {
+    border: black 2px solid;
+    margin: 0 0 0 110px;
+    /* height: 30%;  */
+    /* margin-right: 20px;
+    margin-left: 220px; */
+    /* padding-right: 20px; */
+}
+
+button:last-child {
+    margin-left: 40px;
+}
+
+@media (min-width: 768px) {
+    #bottom-row {
+        width: 600px;
+        margin-left: 55px;
+    }
+
+    form label {
+        margin-left: -60px;
+    }
+
+    button {
+        margin: 0 0 0 150px;
+    }
+}
+
+@media (min-width: 992px) {
+    #bottom-row {
+        width: 800px;
+        margin-left: 70px;
+    }
+
+    form label {
+        margin-left: -100px;
+    }
+
+    button {
+        margin: 0 0 0 250px;
+    }
+
+    bottom:last-child {
+        margin-left: 270px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #bottom-row {
+        margin-left: 150px;
+        /* border: 2px green solid; */
+    }
+}
+
+@media (min-width: 1400px) {
+    #bottom-row {
+        /* border: green 2px solid; */
+        width: 1000px;
+    }
+    
+    button {
+        margin: 0 0 0 490px;
+    }
+}

@@ -1,0 +1,55 @@
+:root {
+    --perRow: 3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #ccc; 
+    /* gray color */
+}
+
+h1 {
+    text-align: center;
+}
+
+#player1 {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 400px;
+    height: 400px; */
+    margin: 0 auto;
+    /* centers the gameboard */
+    background: rgb(107, 149, 212);
+}
+
+ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+ul li {
+    list-style-type: none;
+    text-decoration: none;
+    height: 75px;
+    /* padding-top: 45px; */
+    /* padding-left: 30px; */
+    /* float: left; */
+}
+
+li {
+    /* border: green 2px solid; */
+    /* margin: 0; */
+    text-decoration: none;
+    list-style-type: none;
+    /* float: left; */
+}
+
+.tile {
+    width: calc(100%/var(--perRow));
+    height: calc(100%/var(--perRow));
+    border: 2px solid #fff;
+}

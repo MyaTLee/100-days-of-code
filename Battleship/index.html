@@ -8,112 +8,147 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="../battleship/asset/battleship.css">
+    <link rel="stylesheet" href="asset/battleship.css">
+    <!-- <link rel="stylesheet" href="../battleship/asset/battleship2.css"> -->
+
     <title>Battleship</title>
 </head>
 <body>
-    <header class="container">
-        <div class="row">
-            <div class="col">
-                <h1><b>Battleship Game</b></h1>
-                <p id="textbox">Place the ships.</p>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1><b>Battleship Game</b></h1>
+                    <p id="textbox">Place the ships.</p>
+                </div>
+                <!-- <div class="clear"></div> -->
             </div>
-            <!-- <div class="clear"></div> -->
+            
+            <div class="row" id="bottom-header">
+                <h2 class="col-md-4 col-sm-4 col-xs-4 col-lg-4"><i>#100DaysofCode</i></h2>
+            </div>
         </div>
         
-        <div class="row" id="bottom-header">
-            <h2><i>#100DaysofCode</i></h2>
-        </div>
     </header>
+    <main>
 
-    <!-- <section class="game container">
-        <div class="row" id="row1">
-            <div class="col">1</div>
-            <div class="col">2</div>
-            <div class="col">3</div>
-        </div>
-        <div class="row" id="row2">
-            <div class="col">4</div>
-            <div class="col">5</div>
-            <div class="col">6</div>
-        </div>
-        <div class="row" id="row3">
-            <div class="col">7</div>
-            <div class="col">8</div>
-            <div class="col">9</div>
-        </div>
-    </section> -->
-
-    <section id="player-board"> 
-    
-        <div class="game2 container" id="player1">
-            <ul class="row flex-row" id="row4">
-                <li class="col">1</li>
-                <li class="col">2</li>
-                <li class="col">3</li>
-            </ul>
-            <ul class="row flex-row" id="row5">
-                <li class="col">4</li>
-                <li class="col">5</li>
-                <li class="col">6</li>
-            </ul>
-            <ul class="row flex-row" id="row6">
-                <li class="col">7</li>
-                <li class="col">8</li>
-                <li class="col">9</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="opponent-board">
-            
-        <div class="game3 container" id="player2">
-            <ul class="row flex-row" id="row7">
-                <li class="col">1</li>
-                <li class="col">2</li>
-                <li class="col">3</li>
-            </ul>
-            <ul class="row flex-row" id="row8">
-                <li class="col">4</li>
-                <li class="col">5</li>
-                <li class="col">6</li>
-            </ul>
-            <ul class="row flex-row" id="row9">
-                <li class="col">7</li>
-                <li class="col">8</li>
-                <li class="col">9</li>
-            </ul>
-        </div>
-    </section>
-
-
-    <section class="score container">
-        <div class="row">
-            <div class="col flex-row">
-                <table class="table-responsive-sm table-bordered">
-                    <tr>
-                        <th>Wins:</th>
-                        <th>Losses:</th>
-                    </tr>
-                    <tr>
-                        <td><span id="wins">0</span></td>
-                        <td><span id="losses">0</span></td>
-                    </tr>
-                </table>
-
-
-                <!-- score: table tr/th -->
-
-                <!-- reset/restart game button -->
-                <!-- gameboard size -->
-                <!-- save the position (where the ships are) is a start button (is a function) -->
-                <!-- placement of the ships: click and drag -->
-                <!-- ships: inventory -->
-                <!-- website with the games/projects on -->
+        <!-- <section class="game container">
+            <div class="row" id="row1">
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
             </div>
-        </div>
-    </section>
+            <div class="row" id="row2">
+                <div class="col">4</div>
+                <div class="col">5</div>
+                <div class="col">6</div>
+            </div>
+            <div class="row" id="row3">
+                <div class="col">7</div>
+                <div class="col">8</div>
+                <div class="col">9</div>
+            </div>
+        </section> -->
 
-    <script src="../battleship/asset/battleship.js"></script>
+        <section class="grid d-flex container" id="board"> 
+        
+            <div class="game2 container " id="player1">
+                <!-- <ul class="row" id="row4">
+                    <li class="col">1</li>
+                    <li class="col">2</li>
+                    <li class="col">3</li>
+                </ul>
+                <ul class="row" id="row5">
+                    <li class="col">4</li>
+                    <li class="col">5</li>
+                    <li class="col">6</li>
+                </ul>
+                <ul class="row" id="row6">
+                    <li class="col">7</li>
+                    <li class="col">8</li>
+                    <li class="col">9</li>
+                </ul> -->
+            </div>
+                
+            <div class="game3 container" id="player2">
+                <!-- <ul class="row" id="row7">
+                    <li class="col">1</li>
+                    <li class="col">2</li>
+                    <li class="col">3</li>
+                </ul>
+                <ul class="row" id="row8">
+                    <li class="col">4</li>
+                    <li class="col">5</li>
+                    <li class="col">6</li>
+                </ul>
+                <ul class="row" id="row9">
+                    <li class="col">7</li>
+                    <li class="col">8</li>
+                    <li class="col">9</li>
+                </ul> -->
+            </div>
+        </section>
+
+        <!-- <img src="asset/battleship.jpg" alt="" srcset="">
+        <img src="asset/carrier.jpg" alt="" srcset="">
+        <img src="asset/cruiser.jpg" alt="">
+        <img src="asset/destroyer.jpg" alt="" srcset="">
+        <img src="asset/submarine.jpg" alt="" srcset=""> -->
+    </main>
+
+    <footer class="d-flex">
+        <section class="score container" id="score-container">
+            <div class="row">
+                <div class="col flex-row">
+                    <table class="table-responsive-sm table-bordered">
+                        <tr>
+                            <th>Wins:</th>
+                            <th>Losses:</th>
+                        </tr>
+                        <tr>
+                            <td><span id="wins">0</span></td>
+                            <td><span id="losses">0</span></td>
+                        </tr>
+                    </table>
+
+
+                    <!-- score: table tr/th -->
+
+                    <!-- reset/restart game button -->
+                    <!-- gameboard size -->
+                    <!-- save the position (where the ships are) is a start button (is a function) -->
+                    <!-- placement of the ships: click and drag -->
+                    <!-- ships: inventory -->
+                    <!-- website with the games/projects on -->
+                </div>
+            </div>
+            <div class="row" id="bottom-row">
+
+                <form class="col-12" action="/action_page.php">
+                    <label for="gameboard"><b>Choose a board size:</b></label>
+                    <select id="gameboard" name="gameboard">
+                        <option value="choosesomething" id="option">Choose</option>
+                        <option id="three-rows" value="3">3x3</option>
+                        <option id="five-rows" value="5">5x5</option>
+                        <option id="six-rows" value="6">6x6</option>
+                        <option id="ten-rows" value="10">10x10</option>
+                        <option id="random-rows" value="random">random</option>
+                    </select>
+                    <!-- <input type="submit"> -->
+
+                    <button id="play"><span id="play-span">Play</span></button>
+                    <button id="instructions"><span id="help-span">Help</span></button>
+                </form>
+                
+            </div>
+        </section>
+        <!-- <section id="buttons">
+            <div class="container">
+                
+            </div>
+        </section> -->
+    </footer>
+
+    <script src="asset/battleship.js"></script>
 </body>
 </html>
